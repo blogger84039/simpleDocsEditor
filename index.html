@@ -2,6 +2,15 @@
 <html lang="ja">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRYTWR733L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RRYTWR733L');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>簡易文書作成サイト</title>
@@ -21,6 +30,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <meta name="google-site-verification" content="1-xrlmVgKr4V1tAEmzkwM25j4ZUPQbVUKgU8okFnNl4" />
 </head>
 
 <body>
@@ -46,7 +56,8 @@
         <div class="d-flex flex-column mt-3">
           <div class="mb-1"><label for="title_input">タイトル：<input type="text" id="title_input"></label></div>
           <div class="mb-1"><label for="date_inout">日付：&emsp;<input type="date" id="date_input"></label></div>
-          <div class="mb-1"><label for="contents_input">内容：&emsp;<textarea name="contents" id="contents_input" cols="70" rows="20"></textarea></label></div>
+          <div class="mb-1"><label for="contents_input">内容：&emsp;<textarea name="contents" id="contents_input" cols="70"
+                rows="20"></textarea></label></div>
           <div class="d-flax mb-1">
             <button id="button_a">送信</button>
             <button id="print_button" onclick="window.print(); return false;">印刷</button>
