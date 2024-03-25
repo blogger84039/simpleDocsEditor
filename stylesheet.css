@@ -5,7 +5,8 @@
 }
 
 #pre {
-    size: A4;
+    width: auto;
+    height: auto;
 }
 
 #a_contents {
