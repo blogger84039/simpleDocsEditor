@@ -35,10 +35,21 @@ a {
 }
 
 @media print {
+    #header {
+        height: 0;
+    }
+    .container {
+        padding: 0;
+    }
+    #content {
+        margin-top: 0 !important;
+    }
     .title {
         display: none;
     }
-
+    #pre {
+        border: none !important;
+    }
     #title_a {
         display: none;
     }
@@ -54,4 +65,12 @@ a {
     li {
         display: none;
     }
+    #footer {
+        height: 0;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin: 0;
 }
