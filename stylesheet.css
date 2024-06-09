@@ -13,6 +13,16 @@
     white-space: pre-wrap;
 }
 
+#form {
+    width: fit-content;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+}
+
 textarea {
     vertical-align: top;
 }
@@ -36,24 +46,32 @@ a {
 }
 
 @media print {
-    html, body {
+
+    html,
+    body {
         padding: 0;
         margin: 0;
         width: 100%;
         height: 100%;
     }
+
     #header {
         height: 0;
     }
-    .container, #content, #pre {
+
+    .container,
+    #content,
+    #pre {
         width: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
     .title {
         display: none;
     }
+
     #title_a {
         display: none;
     }
@@ -69,6 +87,7 @@ a {
     li {
         display: none;
     }
+
     #footer {
         height: 0;
     }
